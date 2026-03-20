@@ -5,80 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Боковая панель</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header>
-        <div class="header__block">
-            <button class="header__block--icon" type="button">
-                <img src="./IMG/burger.svg" alt="иконка меню">
-            </button>
-            <button class="header__block--logo" type="button">
-                <img src="./IMG/Group.png" alt="логотип">
-            </button>
-            <button class="header__block--icon" type="button">
-                <img src="./IMG/search.svg" alt="поиск">
-            </button>
-        </div>
-    </header>
-    <aside>
-        <div class="sidebar">
+    <div class="sidebar__conteiner">
+        <header class="header__conteiner">
+            <div class="header__block">
+                <button class="header__block--burger" type="button">
+                    <img src="./IMG/burger.svg" alt="иконка меню">
+                </button>
+                <button class="header__block--logo" type="button">
+                    <img src="./IMG/Group.png" alt="логотип">
+                </button>
+                <button class="header__block--search" type="button">
+                    <img src="./IMG/search.svg" alt="поиск">
+                </button>
+            </div>
+        </header>
+        <aside>
             <div class="sidebar__menu">
-                <ul>
-                    <li>
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
                         <button type="button" class="sidebar__button">
-                            <span class="sidebar__item">
-                                Ремонт техники
-                            </span>
+                            Ремонт техники
                         </button>
                     </li>
-                    <li>
+                    <li class="sidebar__item">
                         <button type="button" class="sidebar__button">
-                            <span class="sidebar__item">
-                                Услуги и сервисы
-                            </span>
+                            Услуги и сервисы
                         </button>
                     </li>
-                    <li>
+                    <li class="sidebar__item">
                         <button type="button" class="sidebar__button">
-                            <span class="sidebar__item">
-                                Корпоративным клиентам
-                            </span>
+                            Корпоративным клиентам
                         </button>
                     </li>
-                    <li>
+                    <li class="sidebar__item">
                         <button type="button" class="sidebar__button">
-                            <span class="sidebar__item">
-                                Продавцам техники
-                            </span>
+                            Продавцам техники
                         </button>
                     </li>
-                    <li>
+                    <li class="sidebar__item">
                         <button type="button" class="sidebar__button">
-                            <span class="sidebar__item">
-                                Партнерам
-                            </span>
+                            Партнерам
                         </button>
                     </li>
-                    <li>
+                    <li class="sidebar__item">
                         <button type="button" class="sidebar__button">
-                            <span class="sidebar__item">
-                                Производителям
-                            </span>
+                            Производителям
                         </button>
                     </li>
-                    <li>
+                    <li class="sidebar__item">
                         <button type="button" class="sidebar__button">
-                            <span class="sidebar__item">
-                                Наши сервисные центры
-                            </span>
+                            Наши сервисные центры
                         </button>
                     </li>
-                    <li>
+                    <li class="sidebar__item">
                         <button type="button" class="sidebar__button">
-                            <span class="sidebar__item">
-                                Контакты
-                            </span>
+                            Контакты
                         </button>
                     </li>
                 </ul>
@@ -104,17 +89,18 @@
             </div>
             <div class="sidebar__lang-switcher">
                 <button type="button" class="lang-switcher">
-                    <span>RU</span>
+                    RU
                 </button>
                 <button type="button" class="lang-switcher">
-                    <span>EN</span>
+                    EN
                 </button>
                 <button type="button" class="lang-switcher">
-                    <span>CH</span>
+                    CH
                 </button>
             </div>
-        </div>
-    </aside>
+        </aside>
+    </div>
+
 </body>
 
 </html>
