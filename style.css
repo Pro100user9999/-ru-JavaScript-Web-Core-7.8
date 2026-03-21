@@ -5,8 +5,6 @@
 }
 body {
     width: 100%;
-    max-width: 320px;
-    min-width: 320px;
     background-color: rgb(255, 255, 255);
     font-family: "TT Lakes";
     
@@ -18,9 +16,15 @@ button[type="button"] {
 }
 .sidebar__conteiner {
     display: flex;
+    max-width: 320px;
+    min-width: 320px;
+    height: 100vh;
     margin: 0;
     flex-direction: column;
-    border: 1px solid black;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 9px 7px 9px 9px rgba(0, 0, 0, 0.1);
+   
     
     
 }
@@ -42,7 +46,7 @@ button[type="button"] {
 .sidebar__menu {
     display: flex;
     max-width: 222px;
-  
+    margin-top: 2.5rem;
 }
 
 .sidebar__list {
@@ -50,8 +54,12 @@ button[type="button"] {
     list-style: none;
     flex-direction: column;
     gap: 2rem;
-    
 }
+
+.sidebar__button {
+    font-size: 14px;
+}
+
 .sidebar__list > :first-child {
     border-left: 4px solid #41F6D7;
     padding-left: 1.5rem;
@@ -59,6 +67,44 @@ button[type="button"] {
 }
 .sidebar__list > *:not(:first-child) {
     padding: 0 1.5rem;
+}
+
+
+.sidebar__contact {
+    display: flex;
+    flex-direction: column;
+    padding: 15rem 1.5rem 0 1.5rem;
+}
+.sidebar__contact__icon {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.sidebar__contact__mail {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 15px;
+    padding: 1rem 0 1rem 0;
+}
+
+.sidebar__contact__phone {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;   
+}
+
+.sidebar__lang-switcher {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    gap: 0.5rem;
+    padding: 2rem 0 1rem 1.5rem;
 }
 
 
