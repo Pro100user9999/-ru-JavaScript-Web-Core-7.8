@@ -18,7 +18,7 @@ button[type="button"] {
     display: flex;
     max-width: 320px;
     min-width: 320px;
-    height: 100vh;
+    height: 100%;
     margin: 0;
     flex-direction: column;
     position: fixed;
@@ -59,6 +59,9 @@ button[type="button"] {
 .sidebar__button {
     font-size: 14px;
 }
+.sidebar__button--first {
+    color: #7E7E82;
+}
 
 .sidebar__list > :first-child {
     border-left: 4px solid #41F6D7;
@@ -95,6 +98,8 @@ button[type="button"] {
     justify-content: flex-start;
     align-items: center;
     font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
     font-weight: bold;   
 }
 
@@ -102,7 +107,9 @@ button[type="button"] {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
     gap: 0.5rem;
     padding: 2rem 0 1rem 1.5rem;
 }
