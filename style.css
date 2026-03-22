@@ -34,8 +34,8 @@ button[type="button"] {
 }
 
 .header__block--logo {
-    padding-right: 4rem;
-    padding-left: 0.5rem;
+    padding-right: 3rem;
+    padding-left: 1rem;
 }
 .header__block--search {
     padding-right: 4rem;
