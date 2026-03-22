@@ -24,10 +24,8 @@ button[type="button"] {
     position: fixed;
     z-index: 1000;
     box-shadow: 9px 7px 9px 9px rgba(0, 0, 0, 0.1);
-   
-    
-    
 }
+
 .header__block {
     display: flex;
     align-items: center;
@@ -107,12 +105,47 @@ button[type="button"] {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 18px;
     line-height: 24px;
+    font-weight: bold;
     gap: 0.5rem;
     padding: 2rem 0 1rem 1.5rem;
 }
+/* интерактивные кнопки */
+.lang-switcher:focus {
+    color: #7E7E82;
+}
+.sidebar__button:focus {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(1rem, 0) scale(1.3);
+}
+.sidebar__button:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(1rem, 0) scale(1.3);
+}
+
+.header__block--burger:focus {
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(180deg) scale(1.2);
+}
+.header__block--search:focus {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+.sidebar__contact__icon--call:focus,
+.sidebar__contact__icon--chat:focus,
+.sidebar__contact__icon--profil:focus {
+    transition: transform 0.3s ease-in-out;
+    transform: rotateY(360deg) scale(1.2);
+}
+
+.sidebar__contact__mail:focus {
+   transform: scale(1.2);
+}
+
+
+
 
 
 
