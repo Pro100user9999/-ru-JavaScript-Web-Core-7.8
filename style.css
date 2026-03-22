@@ -23,27 +23,26 @@ button[type="button"] {
     position: fixed;
     z-index: 1000;
     box-shadow: 9px 7px 9px 9px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
 }
 
 .header__block {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    padding: 1rem 4rem 1.5rem 1.5rem;
 }
 
 .header__block--logo {
     padding-right: 3rem;
     padding-left: 1rem;
 }
-.header__block--search {
-    padding-right: 4rem;
-}
+
 
 .sidebar__menu {
     display: flex;
     max-width: 222px;
-    margin-top: 2.5rem;
+    padding-top: 2.5rem;
 }
 
 .sidebar__list {
@@ -144,7 +143,11 @@ button[type="button"] {
    transform: scale(1.2);
 }
 
-
+@media (min-width: 1024px) {
+    .sidebar__conteiner {
+        overflow: hidden;
+    }
+}
 
 
 
