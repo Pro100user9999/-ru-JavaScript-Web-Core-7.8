@@ -16,8 +16,7 @@ button[type="button"] {
 }
 .sidebar__conteiner {
     display: flex;
-    max-width: 320px;
-    min-width: 320px;
+    width: 320px;
     height: 100%;
     margin: 0;
     flex-direction: column;
