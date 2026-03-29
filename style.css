@@ -36,7 +36,8 @@ button[type="button"] {
 
 .header__block__burger {
     display: flex;
-    gap: 8px;
+    gap: 15px;
+    align-items: center;
 }
 
 .header__block--search {
@@ -120,12 +121,15 @@ button[type="button"] {
 *:focus {
     outline: none;
 }
-.lang-switcher:focus, .lang-switcher:hover {
+.lang-switcher:focus, 
+.lang-switcher:hover,
+.lang-switcher:active {
     color: #7E7E82;
 }
 
 
-.sidebar__button:focus {
+.sidebar__button:focus,
+.sidebar__button:active  {
     transition: transform 0.3s ease-in-out;
     transform: translate(1rem, 0) scale(1.3);
     filter: contrast(2);
@@ -137,40 +141,30 @@ button[type="button"] {
     transform: translate(1rem, 0) scale(1.3);
     filter: contrast(2);
     border-radius: 3px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .header__block--burger:focus,
-.header__block--search:focus {
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.2);
-}
-
+.header__block--search:focus,
 .header__block--burger:hover,
-.header__block--search:hover {
+.header__block--search:hover,
+.header__block--burger:active,
+.header__block--search:active {
     transition: transform 0.3s ease-in-out;
     transform: scale(1.2);
 }
-
 
 .sidebar__contact__icon--call:focus,
 .sidebar__contact__icon--chat:focus,
-.sidebar__contact__icon--profil:focus {
-    transition: transform 0.3s ease-in-out;
-    transform: rotateY(360deg) scale(1.2);
-}
-
+.sidebar__contact__icon--profil:focus,
 .sidebar__contact__icon--call:hover,
 .sidebar__contact__icon--chat:hover,
-.sidebar__contact__icon--profil:hover {
+.sidebar__contact__icon--profil:hover,
+.sidebar__contact__icon--chat:active,
+.sidebar__contact__icon--profil:active {
     transition: transform 0.3s ease-in-out;
     transform: rotateY(360deg) scale(1.2);
 }
 
-
-.sidebar__contact__mail:focus {
-   transform: scale(1.2);
-}
 
 @media (min-width: 1024px) {
     .sidebar__conteiner {
