@@ -30,12 +30,18 @@ button[type="button"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 4rem 1.5rem 1.5rem;
+    padding: 24px; 
+    
 }
 
-.header__block--logo {
-    padding-right: 3rem;
-    padding-left: 1rem;
+.header__block__burger {
+    display: flex;
+    gap: 8px;
+}
+
+.header__block--search {
+    display: flex;
+    margin-left: auto;
 }
 
 
@@ -114,9 +120,10 @@ button[type="button"] {
 *:focus {
     outline: none;
 }
-.lang-switcher:focus {
+.lang-switcher:focus, .lang-switcher:hover {
     color: #7E7E82;
 }
+
 
 .sidebar__button:focus {
     transition: transform 0.3s ease-in-out;
@@ -139,12 +146,27 @@ button[type="button"] {
     transform: scale(1.2);
 }
 
+.header__block--burger:hover,
+.header__block--search:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+
 .sidebar__contact__icon--call:focus,
 .sidebar__contact__icon--chat:focus,
 .sidebar__contact__icon--profil:focus {
     transition: transform 0.3s ease-in-out;
     transform: rotateY(360deg) scale(1.2);
 }
+
+.sidebar__contact__icon--call:hover,
+.sidebar__contact__icon--chat:hover,
+.sidebar__contact__icon--profil:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: rotateY(360deg) scale(1.2);
+}
+
 
 .sidebar__contact__mail:focus {
    transform: scale(1.2);
