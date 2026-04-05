@@ -45,6 +45,11 @@ button[type="button"] {
     margin-left: auto;
 }
 
+aside {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 
 .sidebar__menu {
     display: flex;
@@ -80,6 +85,7 @@ button[type="button"] {
 .sidebar__contact {
     display: flex;
     flex-direction: column;
+    flex: 1;
     padding: 15rem 1.5rem 0 1.5rem;
 }
 .sidebar__contact__icon {
